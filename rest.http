@@ -1,0 +1,28 @@
+# Dinosau controller
+
+### Get all
+GET http://localhost:8080/api/dinosaur
+
+### Get by id
+GET http://localhost:8080/api/dinosaur/1
+
+### Craete dinosaur
+POST http://localhost:8080/api/dinosaur/
+Content-Type: application/json
+
+{
+    "name": "T Rex",
+    "period": "Maastrichtian"
+}
+
+### Update dinosaur
+PUT http://localhost:8080/api/dinosaur/1
+Content-Type: application/json
+
+{
+    "name": "Rex",
+    "period": "Maastrichtian"
+}
+
+### Delete dinosaur by id
+DELETE  http://localhost:8080/api/dinosaur/1
